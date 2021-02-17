@@ -135,3 +135,63 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/11"]
 shape = SubResource( 1 )
+
+[node name="12" type="StaticBody2D" parent="Platforms"]
+position = Vector2( 288, 416 )
+
+[node name="Sprite" type="Sprite" parent="Platforms/12"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/12"]
+shape = SubResource( 1 )
+
+[node name="13" type="StaticBody2D" parent="Platforms"]
+position = Vector2( 416, 416 )
+
+[node name="Sprite" type="Sprite" parent="Platforms/13"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/13"]
+shape = SubResource( 1 )
+
+[node name="14" type="StaticBody2D" parent="Platforms"]
+position = Vector2( 288, 352 )
+
+[node name="Sprite" type="Sprite" parent="Platforms/14"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/14"]
+shape = SubResource( 1 )
+
+[node name="15" type="StaticBody2D" parent="Platforms"]
+position = Vector2( 168, 296 )
+
+[node name="Sprite" type="Sprite" parent="Platforms/15"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/15"]
+shape = SubResource( 1 )
+
+[node name="16" type="StaticBody2D" parent="Platforms"]
+position = Vector2( 96, 480 )
+
+[node name="Sprite" type="Sprite" parent="Platforms/16"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/16"]
+shape = SubResource( 1 )
+
+[node name="17" type="StaticBody2D" parent="Platforms"]
+position = Vector2( 32, 480 )
+
+[node name="Sprite" type="Sprite" parent="Platforms/17"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/17"]
+shape = SubResource( 1 )

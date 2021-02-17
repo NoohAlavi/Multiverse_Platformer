@@ -8,6 +8,13 @@ public class Player : KinematicBody2D
     [Export] public float gravity = 20f;
     [Export] public float jumpForce = 400f;
 
+    private Sprite playerSprite;
+
+    public override void _Ready()
+    {
+        playerSprite = GetNode<Sprite>("Sprite");
+    }
+
     public override void _PhysicsProcess(float delta)
     {   
         //Implement Gravity
@@ -22,6 +29,18 @@ public class Player : KinematicBody2D
         //Calculates Movement
         velocity.x *= movementSpeed;
         velocity = MoveAndSlide(velocity, Vector2.Up);
+    }
+
+    public override void _Process(float delta)
+    {
+        //Calculate direction of player
+        if (velocity.x > 0)
+        {
+            playerSprite.FlipH = false;
+        } else if (velocity.x < 0)
+        {
+            playerSprite.FlipH = true;
+        }
     }
 
     private void GetInput()
