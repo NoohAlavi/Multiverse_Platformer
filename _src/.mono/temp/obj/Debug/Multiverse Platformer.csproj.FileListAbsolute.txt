@@ -1,0 +1,8 @@
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\bin\Debug\Multiverse Platformer.dll
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\bin\Debug\Multiverse Platformer.pdb
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\obj\Debug\Multiverse Platformer.csprojAssemblyReference.cache
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\obj\Debug\Multiverse Platformer.AssemblyInfoInputs.cache
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\obj\Debug\Multiverse Platformer.AssemblyInfo.cs
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\obj\Debug\Multiverse Platformer.csproj.CoreCompileInputs.cache
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\obj\Debug\Multiverse Platformer.dll
+C:\Users\nooha\documents\github\Multiverse_Platformer\_src\.mono\temp\obj\Debug\Multiverse Platformer.pdb
