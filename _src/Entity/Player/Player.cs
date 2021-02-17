@@ -20,7 +20,6 @@ public class Player : KinematicBody2D
         GetInput();
 
         //Calculates Movement
-        // velocity = velocity.Normalized() * movementSpeed;
         velocity.x *= movementSpeed;
         velocity = MoveAndSlide(velocity, Vector2.Up);
     }
@@ -38,7 +37,7 @@ public class Player : KinematicBody2D
 
     private void Jump()
     {
-        if (!IsOnFloor()) return;
+        if (!IsOnFloor()) return; //Do not jump if in air
         velocity.y = 0;
         velocity.y -= jumpForce;
     }
