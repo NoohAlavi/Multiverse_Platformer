@@ -16,11 +16,10 @@ public class Player : KinematicBody2D
     private void GetInput()
     {
         velocity.x = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
-        velocity.y = Input.GetActionStrength("move_down") - Input.GetActionStrength("move_up");
     }
 
     private void Jump()
     {
-        
+
     }
 }
