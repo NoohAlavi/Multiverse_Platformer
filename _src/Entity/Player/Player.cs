@@ -29,6 +29,13 @@ public class Player : KinematicBody2D
         //Calculate Movement
         velocity.x *= movementSpeed;
         velocity = MoveAndSlide(velocity, Vector2.Up);
+
+        //Check if player fell off the screen
+
+        if (Position.y >= 700f)
+        {
+            Die();
+        }
     }
 
     public override void _Process(float delta)
@@ -59,5 +66,11 @@ public class Player : KinematicBody2D
         if (!IsOnFloor()) return; //Do not jump if in air
         velocity.y = 0;
         velocity.y -= jumpForce;
+    }
+
+    private void Die()
+    {
+        GD.Print("Player fell out of world");
+        GetTree().ReloadCurrentScene();
     }
 }
