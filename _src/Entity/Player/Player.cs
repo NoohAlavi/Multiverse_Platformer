@@ -26,14 +26,14 @@ public class Player : KinematicBody2D
 
         GetInput();
 
-        //Calculates Movement
+        //Calculate Movement
         velocity.x *= movementSpeed;
         velocity = MoveAndSlide(velocity, Vector2.Up);
     }
 
     public override void _Process(float delta)
     {
-        //Calculate direction of player
+        //Calculate direction of player, flip sprite to match direction
         if (velocity.x > 0)
         {
             playerSprite.FlipH = false;

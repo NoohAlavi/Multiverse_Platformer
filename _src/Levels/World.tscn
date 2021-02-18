@@ -10,7 +10,7 @@ extents = Vector2( 32, 32 )
 position = Vector2( 536, 288 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -24, 128 )
+position = Vector2( -24, -48 )
 movementSpeed = 350.0
 jumpForce = 700.0
 
