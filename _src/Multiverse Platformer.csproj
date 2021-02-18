@@ -5,8 +5,9 @@
     <RootNamespace>MultiversePlatformer</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Entity\Spider\Spider.cs" />
     <Content Include="Entity\Player\Player.cs" />
     <Content Include="Levels\World.cs" />
-    <Content Include="Entity\Spider\Spider.cs" />
+    <Content Include="Multiverse Platformer.sln" />
   </ItemGroup>
 </Project>
