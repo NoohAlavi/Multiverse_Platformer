@@ -9,5 +9,6 @@
     <Content Include="Levels\World.cs" />
     <Content Include="Multiverse Platformer.sln" />
     <Content Include="Entity\Bug\Bug.cs" />
+    <Content Include="Levels\World\World.cs" />
   </ItemGroup>
 </Project>
