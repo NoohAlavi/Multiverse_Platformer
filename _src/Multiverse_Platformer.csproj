@@ -6,5 +6,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Entity\Player\Player.cs" />
+    <Content Include="Levels\World.cs" />
   </ItemGroup>
 </Project>
