@@ -32,7 +32,7 @@ public class Player : KinematicBody2D
 
         //Check if player fell off the screen
 
-        if (Position.y >= 700f)
+        if (Position.y >= 800f)
         {
             Die();
         }
