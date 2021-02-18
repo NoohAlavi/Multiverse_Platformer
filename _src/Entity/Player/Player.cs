@@ -8,11 +8,11 @@ public class Player : KinematicBody2D
     [Export] public float gravity = 20f;
     [Export] public float jumpForce = 400f;
 
-    private Sprite playerSprite;
+    private AnimatedSprite playerSprite;
 
     public override void _Ready()
     {
-        playerSprite = GetNode<Sprite>("Sprite");
+        playerSprite = GetNode<AnimatedSprite>("AnimatedSprite");
     }
 
     public override void _PhysicsProcess(float delta)
