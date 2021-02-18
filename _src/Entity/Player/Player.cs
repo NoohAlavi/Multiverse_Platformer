@@ -4,9 +4,9 @@ using System;
 public class Player : KinematicBody2D
 {
     [Export] public Vector2 velocity = Vector2.Zero;
-    [Export] public float movementSpeed = 200f;
+    [Export] public float movementSpeed = 350f;
     [Export] public float gravity = 20f;
-    [Export] public float jumpForce = 400f;
+    [Export] public float jumpForce = 700f;
 
     private AnimatedSprite playerSprite;
 

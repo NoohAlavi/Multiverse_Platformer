@@ -19,12 +19,24 @@ extents = Vector2( 24, 24 )
 script = ExtResource( 2 )
 movementSpeed = 200.0
 
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = -1968.0
+margin_top = -1008.0
+margin_right = -944.0
+margin_bottom = -408.0
+rect_scale = Vector2( 4, 4 )
+color = Color( 0.529412, 0.807843, 0.980392, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -7.15256e-07 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 5
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

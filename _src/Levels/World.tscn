@@ -3,7 +3,7 @@
 [ext_resource path="res://Entity/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/World.cs" type="Script" id=2]
 [ext_resource path="res://Levels/Tileset/TileSet.tres" type="TileSet" id=3]
-[ext_resource path="res://Entity/Spider/Spider.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Entity/Bug/Bug.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node2D"]
 position = Vector2( 536, 288 )
@@ -21,11 +21,10 @@ tile_data = PoolIntArray( -524303, 0, 0, -524302, 0, 0, -589813, 0, 0, -589812, 
 [node name="Player" parent="Entities" instance=ExtResource( 1 )]
 position = Vector2( 512, 240 )
 movementSpeed = 350.0
-jumpForce = 700.0
 
 [node name="Enemies" type="Node" parent="Entities"]
 
-[node name="Spiders" type="Node" parent="Entities/Enemies"]
+[node name="Bugs" type="Node" parent="Entities/Enemies"]
 
-[node name="Spider" parent="Entities/Enemies/Spiders" instance=ExtResource( 4 )]
-position = Vector2( 848, 64 )
+[node name="Bug" parent="Entities/Enemies/Bugs" instance=ExtResource( 4 )]
+position = Vector2( 816, 64 )
