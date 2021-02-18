@@ -59,6 +59,14 @@ public class Player : KinematicBody2D
         {
             Jump();
         }
+
+        //Accelerate gravity if player holding "move_down" key
+
+        if (Input.IsActionPressed("move_down"))
+        {
+            if (!IsOnFloor())
+                velocity.y += (gravity * 2);
+        }
     }
 
     private void Jump()
