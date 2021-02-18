@@ -28,3 +28,4 @@ movementSpeed = 350.0
 
 [node name="Bug" parent="Entities/Enemies/Bugs" instance=ExtResource( 4 )]
 position = Vector2( 816, 64 )
+movementSpeed = 150.0
