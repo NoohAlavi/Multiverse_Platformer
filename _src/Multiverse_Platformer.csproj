@@ -7,5 +7,6 @@
   <ItemGroup>
     <Content Include="Entity\Player\Player.cs" />
     <Content Include="Levels\World.cs" />
+    <Content Include="Entity\Spider\Spider.cs" />
   </ItemGroup>
 </Project>

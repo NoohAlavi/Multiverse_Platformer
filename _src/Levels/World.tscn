@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Entity/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/World.cs" type="Script" id=2]
 [ext_resource path="res://Levels/Tileset/TileSet.tres" type="TileSet" id=3]
+[ext_resource path="res://Entity/Spider/Spider.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node2D"]
 position = Vector2( 536, 288 )
+script = ExtResource( 2 )
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 4, 4 )
@@ -23,3 +26,6 @@ jumpForce = 700.0
 [node name="Enemies" type="Node" parent="Entities"]
 
 [node name="Spiders" type="Node" parent="Entities/Enemies"]
+
+[node name="Spider" parent="Entities/Enemies/Spiders" instance=ExtResource( 4 )]
+position = Vector2( 848, 64 )
