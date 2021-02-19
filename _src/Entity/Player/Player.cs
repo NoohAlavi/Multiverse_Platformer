@@ -7,12 +7,15 @@ public class Player : KinematicBody2D
     [Export] public float movementSpeed = 350f;
     [Export] public float gravity = 20f;
     [Export] public float jumpForce = 700f;
+    [Export] public float maxHealth = 100f;
+    [Export] public float health = 100f;
 
     private AnimatedSprite playerSprite;
 
     public override void _Ready()
     {
         playerSprite = GetNode<AnimatedSprite>("AnimatedSprite");
+        health = maxHealth;
     }
 
     public override void _PhysicsProcess(float delta)

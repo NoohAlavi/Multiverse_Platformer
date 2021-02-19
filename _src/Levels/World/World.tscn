@@ -21,7 +21,6 @@ tile_data = PoolIntArray( -589813, 0, 0, -589812, 0, 0, -589811, 0, 0, -524277, 
 
 [node name="Player" parent="Entities" instance=ExtResource( 1 )]
 position = Vector2( 512, 240 )
-movementSpeed = 350.0
 
 [node name="Enemies" type="Node" parent="Entities"]
 

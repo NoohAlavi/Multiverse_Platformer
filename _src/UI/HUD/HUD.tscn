@@ -1,0 +1,28 @@
+[gd_scene format=2]
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CurrentDimensionLabel" type="Label" parent="CanvasLayer"]
+margin_left = 592.0
+margin_top = 8.0
+margin_right = 807.0
+margin_bottom = 22.0
+rect_scale = Vector2( 2, 2 )
+text = "Current Dimension: <Dimension>"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthLabel" type="Label" parent="CanvasLayer"]
+margin_top = 8.0
+margin_right = 86.0
+margin_bottom = 22.0
+rect_scale = Vector2( 2, 2 )
+text = "Health: 100%"
