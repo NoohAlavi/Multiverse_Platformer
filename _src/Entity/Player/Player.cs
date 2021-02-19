@@ -10,11 +10,13 @@ public class Player : KinematicBody2D
     [Export] public float health = 100f;
 
     private AnimatedSprite playerSprite;
+    private Label healthLabel;
 
     public override void _Ready()
     {
         playerSprite = GetNode<AnimatedSprite>("AnimatedSprite");
         health = maxHealth;
+        healthLabel  = GetNode<Label>("HUD/CanvasLayer/HealthLabel");
     }
 
     public override void _PhysicsProcess(float delta)
@@ -50,6 +52,10 @@ public class Player : KinematicBody2D
         {
             playerSprite.FlipH = true;
         }
+
+        //Set Healthbar to health val
+
+        healthLabel.Text = health + "%";
     }
 
     private void GetInput()
