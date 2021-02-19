@@ -55,7 +55,7 @@ public class Player : KinematicBody2D
 
         //Set Healthbar to health percentage
 
-        healthLabel.Text = (health / maxHealth) + "%";
+        healthLabel.Text = ((health / maxHealth) * 100) + "%";
     }
 
     private void GetInput()
