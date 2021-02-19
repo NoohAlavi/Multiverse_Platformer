@@ -53,9 +53,9 @@ public class Player : KinematicBody2D
             playerSprite.FlipH = true;
         }
 
-        //Set Healthbar to health val
+        //Set Healthbar to health percentage
 
-        healthLabel.Text = health + "%";
+        healthLabel.Text = (health / maxHealth) + "%";
     }
 
     private void GetInput()
