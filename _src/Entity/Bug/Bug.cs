@@ -1,5 +1,4 @@
 using Godot;
-using System;
 
 public class Bug : KinematicBody2D
 {
@@ -7,8 +6,10 @@ public class Bug : KinematicBody2D
     [Export] public Vector2 velocity = Vector2.Zero;
     [Export] public float movementSpeed = 100f;
     [Export] public float gravity = 200f;
+    [Export] public float damage = 1f;
 
     private Sprite sprite;
+    private RayCast2D rayCast;
     
     public override void _Ready()
     {
@@ -16,6 +17,8 @@ public class Bug : KinematicBody2D
         GD.Print(targetPlayer);
 
         sprite = GetNode<Sprite>("Sprite");
+        rayCast = GetNode<RayCast2D>("RayCast2D");
+        rayCast.Enabled = true;
     }
 
     public override void _Process(float delta)
@@ -29,6 +32,9 @@ public class Bug : KinematicBody2D
         {
             sprite.FlipH = false;
         }
+
+        rayCast.CastTo = (targetPlayer.Position - Position).Normalized() * 50f;
+        checkCollisions(targetPlayer);
     }
 
     public override void _PhysicsProcess(float delta)
@@ -51,5 +57,25 @@ public class Bug : KinematicBody2D
     {
         Vector2 targetPos = target.Position;
         velocity = new Vector2(targetPos.x - Position.x, Position.y).Normalized();
+    }
+
+    private void checkCollisions(Player target)
+    {
+        var collider = rayCast.GetCollider();
+        if (collider is Player)
+        {
+            Player p = (Player)collider;
+            if (p == target)
+            {
+                if (target.health > 0)
+                {
+                    target.health -= damage;
+                }
+            }
+        } else 
+        {
+            return;
+            
+        }
     }
 }

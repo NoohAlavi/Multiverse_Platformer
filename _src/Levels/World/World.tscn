@@ -35,7 +35,7 @@ movementSpeed = 150.0
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Bg" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 896, -1.99994 )
+position = Vector2( 896, 0 )
 scale = Vector2( 148, 148.4 )
 texture = ExtResource( 5 )
 region_enabled = true
